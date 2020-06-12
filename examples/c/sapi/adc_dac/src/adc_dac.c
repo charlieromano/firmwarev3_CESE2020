@@ -144,19 +144,10 @@ int main(void){
          uartWriteString( UART_USB, ";\r\n" );
 
          /* Escribo la muestra en la Salida AnalogicaAO - DAC */
-         dacWrite( DAC, muestra );
+         //dacWrite( DAC, muestra );
       }
 
-      /* delayRead retorna TRUE cuando se cumple el tiempo de retardo */
-      if ( delayRead( &delay2 ) ){
-         ledState1 = !ledState1;
-         gpioWrite( LED1, ledState1 );
 
-         /* Si pasaron 20 delays le aumento el tiempo */
-         i++;
-         if( i == 20 )
-            delayWrite( &delay2, 1000 );
-      }
 
    }
 

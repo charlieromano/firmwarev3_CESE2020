@@ -17,7 +17,7 @@ int main (void)
 
    while(true) {
       fsmSemaphoreUpdate();
-      delay(1000);
+      delay(600);
    }
 
    return 0;

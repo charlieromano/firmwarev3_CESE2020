@@ -122,7 +122,7 @@ bool_t spiRead( spiMap_t spi, uint8_t* buffer, uint32_t bufferSize )
 }
 
 
-bool_t spiWrite( spiMap_t spi, uint8_t* buffer, uint32_t bufferSize)
+bool_t spiWrite( spiMap_t spi, uint16_t* buffer, uint32_t bufferSize)
 {
 
    bool_t retVal = TRUE;
